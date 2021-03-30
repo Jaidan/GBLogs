@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: GBLogs
+## Version: 0.1
+## Notes:
+## Author: AveDominiInferni
+## DefaultState: disabled
+## SavedVariables: charname, bank, money
+GBLogs.lua
