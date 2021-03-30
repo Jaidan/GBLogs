@@ -1,13 +1,14 @@
 frame = CreateFrame("FRAME", "frame")
-frame:RegisterEvent("PLAYER_ALIVE")
-frame:RegisterEvent("PLAYER_MONEY")
 frame:RegisterEvent("BANKFRAME_OPENED")
 charname = UnitName("player")
 
 function eventHandler()
+	if bank == nil then
+		bank = ""
+	end
 	if event == "BANKFRAME_OPENED" then
+		bank = table.concat({bank, charname, "*"})
 		local i = 0
-		blog = ""
 		for bag = -1, 10 do
 			local slots = GetContainerNumSlots(bag)
 			for slot = 1, slots do
@@ -15,17 +16,13 @@ function eventHandler()
 				if itemLink then
 					local icon, itemCount = GetContainerItemInfo(bag, slot)
 					local itemName = GetItemName(itemLink)
-					blog = table.concat({blog, itemCount, "~", itemName, "*"})
+					bank = table.concat({bank, itemCount, "~", itemName, "*"})
 					i = i + 1
 				end
 			end
 		end
-		DEFAULT_CHAT_FRAME:AddMessage("Bag logs have been updated, " .. i .. " entries")
-		if i == 0 then
-			blog = nil
-		end
-	elseif event == "PLAYER_MONEY" or event == "PLAYER_ALIVE" then
-		money = tostring(GetMoney())
+		bank = table.concat({bank, tostring(GetMoney()), "~Money", "$"})
+		DEFAULT_CHAT_FRAME:AddMessage("Bank logs have been updated, " .. i .. " entries")
 	end
 end
 

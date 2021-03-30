@@ -4,5 +4,5 @@
 ## Notes:
 ## Author: AveDominiInferni
 ## DefaultState: disabled
-## SavedVariables: charname, bank, money
+## SavedVariables: bank
 GBLogs.lua
