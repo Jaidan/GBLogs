@@ -1,5 +1,5 @@
 # GBLogs
-This addon is used to make logs of your characters inventory. The logs are used by the [Guild Bank Bot](https://top.gg/bot/782103493598117930) on Discord.
+This addon is used to make logs of your characters inventory. The logs are used by the [Guild Bank Bot](https://top.gg/bot/782103493598117930)
 ### Installation
 1. Download [Latest Version](https://github.com/AveDominiInferni/GBLogs/archive/refs/heads/master.zip)
 2. Unpack the Zip file
