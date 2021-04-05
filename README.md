@@ -11,6 +11,4 @@ This addon is used to make logs of your characters inventory. The logs are used 
 All you need to do is open the guild bank tab and a message will be displayed in your chat window.
 ![alt text](https://i.postimg.cc/dVQPq5Jx/logged.png)
 #### How to upload logs
-Assuming the bot is already added to your discord channel, all you need to do now is find the 'GBLogs.lua' file in Wow-Directory\WTF\Account\[Account name]\SavedVariables and attach it to your message with the command <code>%log<\code>
-![alt text](https://i.postimg.cc/VNVWSknC/image-2021-04-05-101700.png)
-
+Assuming the bot is already added to your discord channel, all you need to do now is find the 'GBLogs.lua' file in Wow-Directory\WTF\Account\[Account name]\SavedVariables and attach it to your message with the command ```%log```
