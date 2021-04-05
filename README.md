@@ -12,3 +12,4 @@ All you need to do is open the guild bank tab and a message will be displayed in
 ![alt text](https://i.postimg.cc/dVQPq5Jx/logged.png)
 ### How to upload logs
 All you need to do is find the 'GBLogs.lua' file in Wow-Directory\WTF\Account\[Account name]\SavedVariables and attach it to your message with the command ```%log```
+**WARNING:** The 'GBLogs.lua' gets bigger in size after each logging. Delete it from time to time to avoid unnecessary waiting while uploading it due to size.
