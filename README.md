@@ -1,2 +1,12 @@
-### GBLogs
-This addon is used to make logs of your characters inventory. The logging is triggered when you open the bank tab.
+#### GBLogs
+This addon is used to make logs of your characters inventory. The logs are used by the [Guild Bank Bot](https://top.gg/bot/782103493598117930) on Discord.
+# Installation
+1. Download [Latest Version](https://github.com/AveDominiInferni/GBLogs/archive/refs/heads/master.zip)
+2. Unpack the Zip file
+3. Rename the folder "GBLogs-master" to "GBLogs"
+4. Copy "GBLogs" into Wow-Directory\Interface\AddOns
+5. Restart Wow
+# How to log
+All you need to do is open the guild bank tab and a message will be displayed in your chat window.
+![alt text](https://i.postimg.cc/dVQPq5Jx/logged.png)
+
