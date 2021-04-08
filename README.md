@@ -8,7 +8,7 @@ This addon is used to make logs of your characters inventory. The logs are used 
 5. Restart Wow
 6. The addon is turned off by default, make sure to enable it for your bank characters
 ## How to log
-All you need to do is open the guild bank tab and a message will be displayed in your chat window.
+All you need to do is open the bank tab and a message will be displayed in your chat window.
 ![alt text](https://i.postimg.cc/dVQPq5Jx/logged.png)
 ## How to upload logs
 All you need to do is find the 'GBLogs.lua' file in Wow-Directory\WTF\Account\[Account name]\SavedVariables and attach it to your message with the command ```%log```
