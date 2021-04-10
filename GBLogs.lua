@@ -7,6 +7,23 @@ function eventHandler()
 		bank = ""
 	end
 	if event == "BANKFRAME_OPENED" then
+		local name_start, name_end = string.find(bank, charname)
+		if name_start ~= nil then
+			local entry_end, junk = string.find(bank, "$", name_end, true)
+			local temp1 = ""
+			local temp2 = ""
+			if name_start ~= 1 then
+				temp1 = string.sub(bank, 1, name_start - 1)
+				DEFAULT_CHAT_FRAME:AddMessage("name_start ~= 1")
+			end
+			DEFAULT_CHAT_FRAME:AddMessage("temp1: "..temp1)
+			if string.len(bank) ~= entry_end then
+				temp2 = string.sub(bank, entry_end + 1)
+				DEFAULT_CHAT_FRAME:AddMessage("string.len(bank) ~= entry_end")
+			end
+			DEFAULT_CHAT_FRAME:AddMessage("temp2: "..temp2)
+			bank = table.concat({temp1, temp2})
+		end
 		bank = table.concat({bank, charname, "*"})
 		local i = 0
 		for bag = -1, 10 do
@@ -33,6 +50,3 @@ function GetItemName(some_string)
 	local name_end = string.find(some_string, "%]") - 1
 	return string.sub(some_string, name_start, name_end)
 end
-
-
-	
