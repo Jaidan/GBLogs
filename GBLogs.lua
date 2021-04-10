@@ -14,14 +14,10 @@ function eventHandler()
 			local temp2 = ""
 			if name_start ~= 1 then
 				temp1 = string.sub(bank, 1, name_start - 1)
-				DEFAULT_CHAT_FRAME:AddMessage("name_start ~= 1")
 			end
-			DEFAULT_CHAT_FRAME:AddMessage("temp1: "..temp1)
 			if string.len(bank) ~= entry_end then
 				temp2 = string.sub(bank, entry_end + 1)
-				DEFAULT_CHAT_FRAME:AddMessage("string.len(bank) ~= entry_end")
 			end
-			DEFAULT_CHAT_FRAME:AddMessage("temp2: "..temp2)
 			bank = table.concat({temp1, temp2})
 		end
 		bank = table.concat({bank, charname, "*"})
