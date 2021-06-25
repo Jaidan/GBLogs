@@ -1,8 +1,9 @@
 frame = CreateFrame("FRAME", "frame")
 frame:RegisterEvent("BANKFRAME_OPENED")
 charname = UnitName("player")
+DEFAULT_CHAT_FRAME:AddMessage("Bank log tracking enabled")
 
-function eventHandler()
+function eventHandler(self, event)
 	if bank == nil then
 		bank = ""
 	end
